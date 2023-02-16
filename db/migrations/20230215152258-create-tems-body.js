@@ -17,6 +17,9 @@ module.exports = {
       count: {
         type: Sequelize.INTEGER,
       },
+      countmin: {
+        type: Sequelize.INTEGER,
+      },
       data: {
         type: Sequelize.BOOLEAN,
       },
