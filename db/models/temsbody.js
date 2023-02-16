@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
   TemsBody.init({
     bodyName: DataTypes.TEXT,
     post: DataTypes.TEXT,
+    countmin: DataTypes.INTEGER,
     count: DataTypes.INTEGER,
     data: DataTypes.BOOLEAN,
     tems_id: DataTypes.INTEGER,

@@ -17,11 +17,8 @@ apiRouter.patch('/count/:id', async (req, res) => {
 });
 apiRouter.patch('/-count/:id', async (req, res) => {
   try {
-    if (req.session.like) {
-      await TemsBody.update({ count: sequelize.literal('count -1') }, { where: { id: req.params.id } });
-      res.session.destroy();
-      return res.sendStatus(200);
-    }
+    await TemsBody.update({ countmin: sequelize.literal('count -1') }, { where: { id: req.params.id } });
+    return res.sendStatus(200);
   } catch (erro) {
     console.log(erro);
     return res.sendStatus(500);
