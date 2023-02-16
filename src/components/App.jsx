@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Mainpage from './Mainpage';
 
-export default function App() {
+export default function App({allInit}) {
   return (
-    <div>F</div>
-  )
+    <Routes>
+      <Route path="/" element={<Mainpage allInit={allInit} />} />
+    </Routes>
+  );
 }
