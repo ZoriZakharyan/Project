@@ -45,6 +45,7 @@ export default function Layout({ initState }) {
         />
         <script defer src="/app.js" />
         <script defer src="/vendor.js" />
+        <link href="/css/main.css" rel="stylesheet" />
       </head>
       <body>
         <div id="root">
