@@ -13,7 +13,9 @@ export default function OneInit({ inits }) {
         <h5 className="card-title">{inits.initName}</h5>
         <h6 className="card-subtitle mb-2 text-muted"> Инициативы</h6>
         <p className="card-text">Прими участие в жизни сраны</p>
-        <a href={`tems/${inits.id}`}>Перейти</a>
+
+        <a className="but btn btn-outline-dark" href={`tems/${inits.id}`}>Перейти</a>
+
       </div>
     </div>
   );
