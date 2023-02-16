@@ -1,12 +1,47 @@
+
+.navbar{
+    
+    border: 1px solid black;
+
+}
 form{
     margin-left: auto;
+    
+    
 }
 
 .cont{
-    border: 1px solid black;
+   
     padding: 6px;
+    background-color: #cdcde6;
+    
 }
 
-button{
-    margin-left: 5px;
+.card{
+
+    margin-left: 50px;
+    
+}
+
+
+.container{
+    background-color:#a79c9f;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.card-body{
+    background-color: #cdcde6;
+    border: 1px solid black;
+}
+
+.card-img-top{
+    border: 1px solid black;
+}
+
+.row{
+    border: 1px solid black;
 }

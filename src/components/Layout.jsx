@@ -8,7 +8,6 @@ export default function Layout({ initState }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link href="/css/main.css" rel="stylesheet" />
 
         {/* Bootstrap CSS */}
         <link
@@ -46,6 +45,7 @@ export default function Layout({ initState }) {
         />
         <script defer src="/app.js" />
         <script defer src="/vendor.js" />
+        <link href="/css/main.css" rel="stylesheet" />
       </head>
       <body>
         <div id="root">
