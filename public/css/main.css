@@ -1,14 +1,45 @@
-
+html{
+    
+        overflow-x: hidden;
+        margin-right: calc(-1 * (100vw - 100%));
+      
+}
 .navbar{
+    background-color: #cdcde6;
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     
-    border: 1px solid black;
+   
+}
 
+body{
+   background-color:#4d4964;
+   font-family: 'Montserrat', sans-serif;
+  
 }
-form{
-    margin-left: auto;
+.containerForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.formAdd{
+   
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    background-color: #96646b;
+    padding: 60px;
+
     
     
 }
+
 
 .cont{
    
@@ -18,7 +49,7 @@ form{
 }
 
 .card{
-
+    
     margin-left: 50px;
     
 }
@@ -36,12 +67,74 @@ form{
 .card-body{
     background-color: #cdcde6;
     border: 1px solid black;
+    display: flex;
+  
+    flex-direction: column;
+    box-shadow: 0 3px 5px black
+    
 }
 
 .card-img-top{
     border: 1px solid black;
+    box-shadow: 0 3px 5px black
 }
 
 .row{
-    border: 1px solid black;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.but{
+    
+    color: black;
+    
+}
+
+.butAdd{
+    color: black;
+    
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ulMargin{
+    margin-left: 25px;
+}
+
+.butAdd:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.but:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item{
+    margin-left: 15px;
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.form-controlPost{
+    min-height: 100px;
+    width: 700px;
+}
+
+span{
+    color: black;
+    font-size: 30px;
+    
+}
+
+.select{
+    display: flex;
+    
+    justify-content: center;
 }
