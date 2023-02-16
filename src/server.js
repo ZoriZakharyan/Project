@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import session from 'express-session';
 import store from 'session-file-store';
 import jsxRender from './utils/jsxRender';
+import testRouter from './components/routes/testRouter';
 
 require('dotenv').config();
 
@@ -37,10 +38,6 @@ app.use((req, res, next) => {
   res.locals.path = req.originalUrl;
   res.locals.user = req.session.user;
   next();
-});
-
-app.get('/', (req, res) => {
-  res.render('Layout');
 });
 
 app.listen(PORT, () => console.log(`App has started on port ${PORT}`));
