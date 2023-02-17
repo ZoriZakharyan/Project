@@ -46,6 +46,10 @@ export default function Layout({ initState }) {
         <script defer src="/app.js" />
         <script defer src="/vendor.js" />
         <link href="/css/main.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet" />
+
       </head>
       <body>
         <div id="root">

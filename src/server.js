@@ -5,6 +5,7 @@ import session from 'express-session';
 import store from 'session-file-store';
 import jsxRender from './utils/jsxRender';
 import indexRouter from './routes/indexRouter';
+import addTopic from './routes/addTopic';
 import apiRouter from './routes/apiRouter';
 
 require('dotenv').config();
@@ -42,5 +43,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/', indexRouter);
-app.use('/api', apiRouter);
+app.use('/api/', apiRouter);
+app.use('/add/', addTopic);
+
 app.listen(PORT, () => console.log(`App has started on port ${PORT}`));
